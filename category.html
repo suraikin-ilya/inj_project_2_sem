@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>Новости</title>
+		<title>$category</title>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
+		<div class="wrapper">
 		<header>
 			<div class="header_top">
 				<img src="./img/logo.png" alt="">
@@ -35,8 +36,19 @@
 		</header>
 		<main>
 			<div class="container">
+                <div class="sort">
+                    <h1>$Category</h1>
+                    <nav>
+                        <ul>
+                            <li><a href=""><span>По дате</span></a></li>
+                            <li><a href=""><span>По популярности</span></a></li>
+                            <li><a href=""><span>По комментариям</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
 				<div class="content">
-				</div>
+
+                </div>
 				<div class="sidebar">
 
 				</div>
@@ -49,5 +61,6 @@
 			<a href=""><img src="./img/inst.png" alt=""></a>
 			<a href=""><img src="./img/facebook.png" alt=""></a>
 		</footer>
+	</div>
 	</body>
 </html>
