@@ -418,6 +418,67 @@ h3{
 	background: url('./../img/calendar.svg') no-repeat ;
 }
 
+.article_full{
+	padding: 47px 53px;
+	width: 1205px;
+	border-radius: 50px;
+	background-color: white;
+}
+
+.article_full h1{
+	max-width: 1100px;
+	margin-bottom: 25px;
+	color: #000000;
+	font-family: Roboto;
+	font-size: 64px;
+	font-weight: medium;
+	line-height: 72px;
+}
+
+.article_full h1:hover{
+	color:black;
+}
+
+.article_full span{
+	color: #4e4e4e;
+	font-family: Roboto;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 20px;
+	padding-left: 40px;
+	margin-right: 20px;
+}
+.article_full img{
+	margin-top: 25px;
+	max-width: 1100px;
+}
+
+.article_full p:hover{
+color: black;
+}
+
+.article_full p{
+	margin-top: 25px;
+	color: #000000;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 26px;
+}
+
+.article_full span:nth-child(2){
+	background: url('./../img/eye.svg') no-repeat ;
+}
+
+.article_full span:nth-child(3){
+	background: url('./../img/comment.svg') no-repeat ;
+}
+
+.article_full span:nth-child(4){
+	background: url('./../img/calendar.svg') no-repeat ;
+}
+
+
 .news:hover{
 	color: #632CFF;
 }
