@@ -417,3 +417,43 @@ h3{
 .stats span:nth-child(3){
 	background: url('./../img/calendar.svg') no-repeat ;
 }
+
+.news:hover{
+	color: #632CFF;
+}
+
+a:hover{
+	color: #632CFF;
+}
+
+:hover{
+	color: #632CFF;
+}
+
+input:hover{
+	color: #632CFF;
+}
+
+h1:hover{
+	color: #632CFF;
+}
+
+h2:hover{
+	color: #632CFF;
+}
+
+h3:hover{
+	color: #632CFF;
+}
+
+h4:hover{
+	color: #632CFF;
+}
+
+p:hover{
+	color: #632CFF;
+}
+
+span:hover{
+	color: #632CFF;
+}
