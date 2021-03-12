@@ -14,11 +14,11 @@ $row= $mysql->query("SELECT * FROM `news` WHERE `news_id`= '$news_id'")->fetch_a
 </head>
 <body>
 <div class="wrapper">
-    <form action="check_news.php" method="post">
+    <form action="edit_news.php" method="post">
         <input id="heading" name="heading" type="text" value="<?php echo $row['heading']?>" required><br>
 Категория<br>
         <select name = "category" id="category" required><br>
-            <option value = "1" selected>В мире</option>
+            <option value = "1" >В мире</option>
             <option value = "2">В Москве</option>
             <option value = "3">Политика</option>
             <option value = "4">Происшествия</option>
@@ -26,7 +26,7 @@ $row= $mysql->query("SELECT * FROM `news` WHERE `news_id`= '$news_id'")->fetch_a
             <option value = "6">Спорт</option>
         </select>
         <input id="img" name="img" type="text" value="<?php echo $row['img']?>" required><br>
-        <input id="text" name="text" type="text" value="<?php echo $row['text']?>" required><br>
+        <textarea id="text" name="text" type="text" required><?php echo $row['text']?></textarea><br>
         <button type="submit">Редактировать</button>
     </form>
 </div>

@@ -13,7 +13,7 @@
         <input id="heading" name="heading" type="text" placeholder="Заголовок новости" required><br>
         Категория<br>
         <select name = "category" id="category"required><br>
-            <option value = "1" selected>В мире</option>
+            <option value = "1" >В мире</option>
             <option value = "2">В Москве</option>
             <option value = "3">Политика</option>
             <option value = "4">Происшествия</option>
@@ -21,7 +21,7 @@
             <option value = "6">Спорт</option>
         </select>
         <input id="img" name="img" type="text" placeholder="url картинки" required><br>
-        <input id="text" name="text" type="text" placeholder="Текст статьи" required><br>
+        <textarea id="text" name="text"  placeholder="Текст статьи" required></textarea><br>
         <button type="submit">Добавить</button>
     </form>
 </div>
