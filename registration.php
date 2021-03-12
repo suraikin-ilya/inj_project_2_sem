@@ -10,9 +10,9 @@
 	<body>
 		<main>
             <div class="login">
-                <form method="POST">
+                <form method="POST" action="check.php">
                     <input name="login" type="text" placeholder="login" required><br>
-                    <input name="password" type="password" placeholder="Пароль" required><br>
+                    <input name="pass" type="password" placeholder="Пароль" required><br>
                     <input name="submit" type="submit" value="Зарегистрироваться">
                     </form>
             </div>

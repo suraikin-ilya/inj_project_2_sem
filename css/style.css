@@ -93,8 +93,6 @@ form input{
 	font-weight: 600;
 }
 
-
-
 .header_top span{
 	display: inline-block;
 	width: 150px;
@@ -108,9 +106,22 @@ form input{
 	font-size: 16px;
 	font-weight: normal;
 	color: #000;
-	margin-left: -80px;
+	margin-left: -100px;
 	background: url('./../img/login.png') no-repeat 90px;
 }
+
+.header_button_1:nth-child(1){
+	width: 80px;
+	background: none;
+	margin-left: -100px;
+}
+
+.header_button_2:nth-child(1){
+	width: 100px;
+	background: none;
+	margin-left: 10px;
+}
+
 
 .line{
 	width: 100%;

@@ -11,7 +11,7 @@
         echo "Недопустимая длина пароля";
         exit();
     }
-    $mysql = new mysqli('127.0.0.1','root', '','register');
+    $mysql = new mysqli('127.0.0.1','root', '','inj_project');
     $mysql->query("INSERT INTO `users` (`login`, `pass`) 
     VALUES('$login','$pass')");
-    $mysql->close();
+    header('Location: login.php');
