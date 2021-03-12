@@ -313,7 +313,7 @@ h3{
 	background-color: #fff;
 	margin-top: 100px;
 	padding-top: 0px;
-	padding-left: 62px;
+	padding-left: 22px;
 	border-radius: 50px;
 	display: block;
 }
@@ -325,7 +325,7 @@ h3{
 	font-weight: normal;
 	line-height: 36px;
 	display: inline-block;
-	margin-right: 10%;
+	margin-right: 30px;
 }
 
 .sort nav{
@@ -339,7 +339,7 @@ h3{
 	font-weight: normal;
 	line-height: 36px;
 	padding-top: 25px;
-	margin-right: 150px;
+	margin-right: 80px;
 }
 
 .sort li:nth-child(3){

@@ -1,7 +1,7 @@
 <main>
     <div class="container_2">
         <div class="sort">
-            <h1>$Category</h1>
+            <h1><?php echo $category_name['name'];?></h1>
             <nav>
                 <ul>
                     <li><a href=""><span>По дате</span></a></li>

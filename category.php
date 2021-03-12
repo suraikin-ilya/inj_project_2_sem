@@ -1,7 +1,13 @@
+<?php
+$category = $_GET['category'];
+$mysql = new mysqli('127.0.0.1','root', '','inj_project');
+$category_name= $mysql->query("SELECT * FROM `category` WHERE `category`= '$category'")->fetch_array();
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>$category</title>
+		<title><?php echo $category_name['name'];?> </title>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
@@ -10,7 +16,7 @@
 	<body>
 		<div class="wrapper">
 			<?php require "header.php"?>
-			<?php require "main.php"?>
+			<?php require "main_category.php"?>
 			<?php require "footer.php"?>
 	</div>
 	</body>

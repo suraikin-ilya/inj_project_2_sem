@@ -1,3 +1,6 @@
+<?php
+$mysql = new mysqli('127.0.0.1','root', '','inj_project');
+?>
 <main>
     <div class="container">
         <div class="content">
@@ -22,6 +25,9 @@
                         </div>
                     </a>
                 </div>
+                <?php
+
+                ?>
             </div>
             <div class="moscow">
                 <a href=""><h3>В Москве</h3></a>
