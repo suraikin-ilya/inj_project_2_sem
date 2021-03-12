@@ -14,11 +14,11 @@ $row= $mysql->query("SELECT * FROM `news` WHERE `news_id`= '$news_id'")->fetch_a
 </head>
 <body>
 <div class="wrapper">
-    <form action="edit_news.php" method="post">
+    <form action="edit_news.php?news_id=<?php echo $news_id?>" method="post">
         <input id="heading" name="heading" type="text" value="<?php echo $row['heading']?>" required><br>
 Категория<br>
         <select name = "category" id="category" required><br>
-            <option value = "1" >В мире</option>
+            <option value = "1">В мире</option>
             <option value = "2">В Москве</option>
             <option value = "3">Политика</option>
             <option value = "4">Происшествия</option>

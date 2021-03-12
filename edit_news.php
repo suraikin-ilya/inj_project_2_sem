@@ -8,3 +8,4 @@ $date = date('Y-m-d');
 $mysql = new mysqli('127.0.0.1','root', '','inj_project');
 $mysql->query("UPDATE `news` SET `heading` = '$heading', `img` = '$img', `text` = '$text', `category` = '$category', `date` = '$date' WHERE `news_id`= '$news_id'");
 header('Location: admin.php');
+
