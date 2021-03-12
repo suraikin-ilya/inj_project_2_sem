@@ -535,3 +535,16 @@ p:hover{
 span:hover{
 	color: #632CFF;
 }
+
+@page :left { margin: 1cm 3cm 1cm 1.5cm;}
+
+@page :right { margin: 1cm 3cm 1cm 1.5cm;}
+
+@media print{
+	header{
+		display: none;
+	}
+	footer{
+		display: none;
+	}
+}
