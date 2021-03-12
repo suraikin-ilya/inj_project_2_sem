@@ -3,7 +3,7 @@
         <div class="content">
             <div class="article_full">
                 <?php
-                $mysql = new mysqli('127.0.0.1','root', '','inj_project');
+                require 'link.php';
                 $news_id = $_GET['news_id'];
                 $news = $mysql->query("SELECT * FROM `news` WHERE `news_id`= '$news_id'");
                 $row=$news->fetch_array();

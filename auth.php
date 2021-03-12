@@ -3,7 +3,7 @@
         FILTER_SANITIZE_STRING);
     $pass = filter_var (trim($_POST['pass']),
         FILTER_SANITIZE_STRING);
-    $mysql = new mysqli('127.0.0.1','root', '','inj_project');
+    require 'link.php';
     $result = $mysql->query("SELECT * FROM `users` WHERE `login`= '$login' AND `pass`= '$pass'");
     $user = $result->fetch_assoc();
     if(count($user)==0){

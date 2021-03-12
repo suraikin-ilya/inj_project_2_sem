@@ -1,6 +1,6 @@
 <?php
 $news_id = $_GET['news_id'];
-$mysql = new mysqli('127.0.0.1','root', '','inj_project');
+require 'link.php';
 $news = $mysql->query("SELECT * FROM `news` WHERE `news_id`= '$news_id'")->fetch_array();;
 ?>
 <!DOCTYPE html>

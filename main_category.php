@@ -12,7 +12,7 @@
         </div>
         <div class="content">
             <?php
-            $mysql = new mysqli('127.0.0.1','root', '','inj_project');
+            require 'link.php';
             $category_id = $_GET['category'];
             $news = $mysql->query("SELECT * FROM `news` WHERE `category`= '$category_id'");
             for($i = 1;$row=$news->fetch_array();$i++)

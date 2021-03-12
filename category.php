@@ -1,6 +1,6 @@
 <?php
 $category = $_GET['category'];
-$mysql = new mysqli('127.0.0.1','root', '','inj_project');
+require 'link.php';
 $category_name= $mysql->query("SELECT * FROM `category` WHERE `category`= '$category'")->fetch_array();
 ?>
 

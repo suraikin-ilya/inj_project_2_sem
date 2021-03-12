@@ -16,7 +16,7 @@
     <h1>Список новостей</h1>
     <table style="border: 0px">
     <?php
-    $mysql = new mysqli('127.0.0.1','root', '','inj_project');
+    require 'link.php';
     $news = $mysql->query("SELECT * FROM `news`");
     for($number = 1;$row=$news->fetch_array();$number++)
     {
