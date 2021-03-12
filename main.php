@@ -16,46 +16,109 @@ $mysql = new mysqli('127.0.0.1','root', '','inj_project');
             <div class="world">
                 <a href=""><h3>В Мире</h3></a>
                 <div class="news_container">
-                    <a href="">
-                        <div class="article">
-                            <h4>Lorem,   elit ut aliquam, purus sit amet luctus venentis, lectus magna fringilla urna, porttitor</h4>
-                            <span>12300</span>
-                            <span>900</span>
-                            <span>01.03.2021</span>
-                        </div>
-                    </a>
+                    <?php
+                    $news = $mysql->query("SELECT * FROM `news` WHERE `category`= '1'");
+                    for($i = 1;$row=$news->fetch_array();$i++)
+                    {
+                        echo '<a href="article.php?news_id='.$row['news_id'].'"</a>';
+                        echo '<div class="article">';
+                        echo '<h4>'. $row['heading'] .'</h4>';
+                        echo '<span>12300</span>';
+                        echo '<span>900</span>';
+                        echo '<span>'.$row['date'].'</span>';
+                        echo '</div>';
+                    }
+                    ?>
                 </div>
-                <?php
-
-                ?>
             </div>
             <div class="moscow">
                 <a href=""><h3>В Москве</h3></a>
                 <div class="news_container">
-
+                    <?php
+                    $news = $mysql->query("SELECT * FROM `news` WHERE `category`= '2'");
+                    for($i = 1;$row=$news->fetch_array();$i++)
+                    {
+                        echo '<a href="article.php?news_id='.$row['news_id'].'"</a>';
+                        echo '<div class="article">';
+                        echo '<h4>'. $row['heading'] .'</h4>';
+                        echo '<span>12300</span>';
+                        echo '<span>900</span>';
+                        echo '<span>'.$row['date'].'</span>';
+                        echo '</div>';
+                    }
+                    ?>
                 </div>
             </div>
             <div class="politics">
                 <a href=""><h3>Политика</h3></a>
                 <div class="news_container">
-
+                    <?php
+                    $news = $mysql->query("SELECT * FROM `news` WHERE `category`= '3'");
+                    for($i = 1;$row=$news->fetch_array();$i++)
+                    {
+                        echo '<a href="article.php?news_id='.$row['news_id'].'"</a>';
+                        echo '<div class="article">';
+                        echo '<h4>'. $row['heading'] .'</h4>';
+                        echo '<span>12300</span>';
+                        echo '<span>900</span>';
+                        echo '<span>'.$row['date'].'</span>';
+                        echo '</div>';
+                    }
+                    ?>
                 </div>
             </div>
             <div class="incidents">
                 <a href=""><h3>Происшествия</h3></a>
                 <div class="news_container">
-
+                    <?php
+                    $news = $mysql->query("SELECT * FROM `news` WHERE `category`= '4'");
+                    for($i = 1;$row=$news->fetch_array();$i++)
+                    {
+                        echo '<a href="article.php?news_id='.$row['news_id'].'"</a>';
+                        echo '<div class="article">';
+                        echo '<h4>'. $row['heading'] .'</h4>';
+                        echo '<span>12300</span>';
+                        echo '<span>900</span>';
+                        echo '<span>'.$row['date'].'</span>';
+                        echo '</div>';
+                    }
+                    ?>
                 </div>
             </div>
             <div class="science">
                 <a href=""><h3>Наука и Техника</h3></a>
                 <div class="news_container">
+                    <?php
+                    $news = $mysql->query("SELECT * FROM `news` WHERE `category`= '5'");
+                    for($i = 1;$row=$news->fetch_array();$i++)
+                    {
+                        echo '<a href="article.php?news_id='.$row['news_id'].'"</a>';
+                        echo '<div class="article">';
+                        echo '<h4>'. $row['heading'] .'</h4>';
+                        echo '<span>12300</span>';
+                        echo '<span>900</span>';
+                        echo '<span>'.$row['date'].'</span>';
+                        echo '</div>';
+                    }
+                    ?>
                 </div>
             </div>
             <div class="sport">
                 <a href=""><h3>Спорт</h3></a>
                 <div class="news_container">
-
+                    <?php
+                    $news = $mysql->query("SELECT * FROM `news` WHERE `category`= '6'");
+                    for($i = 1;$row=$news->fetch_array();$i++)
+                    {
+                        echo '<a href="article.php?news_id='.$row['news_id'].'"</a>';
+                        echo '<div class="article">';
+                        echo '<h4>'. $row['heading'] .'</h4>';
+                        echo '<span>12300</span>';
+                        echo '<span>900</span>';
+                        echo '<span>'.$row['date'].'</span>';
+                        echo '</div>';
+                    }
+                    ?>
                 </div>
             </div>
         </div>
