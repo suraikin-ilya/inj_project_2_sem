@@ -1,9 +1,9 @@
 <header>
     <div class="header_top">
         <a href="index.php"><img src="./img/logo.png" alt=""></a>
-        <form name="search" method="post" action="#">
-            <input type="search" name="query" placeholder="Поиск по сайту">
-            <button type="submit"></button>
+        <form method="get" action="search.php">
+            <input type="search" name="search" placeholder="Поиск по сайту">
+            <button type="submit" name="submit"></button>
         </form>
         <?php
             if($_COOKIE['user'] == ''):
