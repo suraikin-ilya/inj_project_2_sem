@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>Registration</title>
+		<title>Login</title>
 		<link rel="stylesheet" href="css/login.css" />
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
@@ -10,15 +10,16 @@
 	<body>
 		<main>
             <div class="login">
-                <form method="POST">
-                    <input name="login" type="text" placeholder="login" required><br>
-                    <input name="password" type="password" placeholder="Пароль" required><br>
-                    <input name="submit" type="submit" value="Зарегистрироваться">
-                    </form>
+                <form method="POST" action="auth.php">
+                    <input id="login" name="login" type="text" placeholder="login" required><br>
+                    <input name="pass" type="password"placeholder="Пароль" required><br>
+                    <input name="submit" type="submit" value="Войти">
+                </form>
+                <a href="./registration.php">Регистрация</a>
             </div>
 		</main>
 		<footer>
 			<span>©2021</span>
 		</footer>
-	</div>
+	</body>
 </html>
