@@ -4,6 +4,7 @@ require 'link.php';
 <main>
     <div class="container">
         <div class="content">
+            <!--
             <div class="news_container">
                 <a href="">
                     <div class="news">
@@ -13,6 +14,7 @@ require 'link.php';
                     </div>
                 </a>
             </div>
+            -->
             <div class="world">
                 <a href=""><h3>В Мире</h3></a>
                 <div class="news_container">
