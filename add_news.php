@@ -10,7 +10,16 @@
 <body>
 <div class="wrapper">
     <form action="check_news.php" method="post">
-        <input id="zagolovok" name="zagolovok" type="text" placeholder="Заголовок новости" required><br>
+        <input id="heading" name="heading" type="text" placeholder="Заголовок новости" required><br>
+        Категория<br>
+        <select name = "category" id="category"required><br>
+            <option value = "1" selected>В мире</option>
+            <option value = "2">В Москве</option>
+            <option value = "3">Политика</option>
+            <option value = "4">Происшествия</option>
+            <option value = "5">Наука и техника</option>
+            <option value = "6">Спорт</option>
+        </select>
         <input id="img" name="img" type="text" placeholder="url картинки" required><br>
         <input id="text" name="text" type="text" placeholder="Текст статьи" required><br>
         <button type="submit">Добавить</button>
