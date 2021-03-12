@@ -1,3 +1,6 @@
+<?php
+
+?>
 <footer>
     <span>©2021</span>
     <a href=""><img src="./img/twitter.png" alt=""></a>
