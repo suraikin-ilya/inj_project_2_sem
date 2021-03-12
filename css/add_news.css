@@ -1,0 +1,19 @@
+body{
+	background-color: #ebebeb;
+	height: 100%;
+    padding: 50px 5% 0 5%;
+    font-family: Raleway;
+    font-size: 16px;
+}
+
+input{
+    margin-bottom: 25px;
+    border-radius: 5px;
+    height: 30px;
+    width: 80%;
+    padding-left: 25px;
+}
+
+input:nth-child(5){
+    height: 500px;
+}
